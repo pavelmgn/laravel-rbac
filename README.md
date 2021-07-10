@@ -1,5 +1,5 @@
 # Laravel RBAC
-Super simple RBAC/ACL implementation for Laravel 5+.
+Super simple RBAC/ACL implementation for Laravel 5.4+.
 
 ## Installation
 Require this package with composer ([Packagist](https://packagist.org/packages/pavelmgn/laravel-rbac)) using the following command
