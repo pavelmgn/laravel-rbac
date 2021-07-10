@@ -1,11 +1,11 @@
 # Laravel RBAC
-Super simple RBAC/ACL implementation for Laravel 5.
+Super simple RBAC/ACL implementation for Laravel 5+.
 
 ## Installation
-Require this package with composer ([Packagist](https://packagist.org/packages/phpzen/laravel-rbac)) using the following command
+Require this package with composer ([Packagist](https://packagist.org/packages/pavelmgn/laravel-rbac)) using the following command
 
 ```
-composer require phpzen/laravel-rbac
+composer require pavelmgn/laravel-rbac
 ```
 
 or modify your `composer.json`
@@ -13,7 +13,7 @@ or modify your `composer.json`
 ```
 "require": {
     ...
-    "phpzen/laravel-rbac": "^0.2"
+    "pavelmgn/laravel-rbac": "^0.2"
 }
 ```
 
@@ -22,13 +22,13 @@ then run `composer update`.
 After installation register the ServiceProvider to the `providers` array in `config/app.php`
 
 ```php
-PHPZen\LaravelRbac\RbacServiceProvider::class,
+Pavelmgn\LaravelRbac\RbacServiceProvider::class,
 ```
 
 Publish migration files
 
 ```
-$ php artisan vendor:publish --provider="PHPZen\LaravelRbac\RbacServiceProvider" --force
+$ php artisan vendor:publish --provider="Pavelmgn\LaravelRbac\RbacServiceProvider" --force
 ```
 
 Run migrations
@@ -42,14 +42,14 @@ Add RBAC middleware to your `app/Http/Kernel.php`
 ```php
 protected $routeMiddleware = [
     ...
-    'rbac' => '\PHPZen\LaravelRbac\Middleware\Rbac::class'
+    'rbac' => '\Pavelmgn\LaravelRbac\Middleware\Rbac::class'
 ];
 ```
 
 Add Rbac trait to your `User` model
 
 ```php
-use PHPZen\LaravelRbac\Traits\Rbac;
+use Pavelmgn\LaravelRbac\Traits\Rbac;
 	
 class User extends Authenticatable
 {
