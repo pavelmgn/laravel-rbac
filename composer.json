@@ -1,32 +1,32 @@
 {
-  "name": "phpzen/laravel-rbac",
-  "description": "Role based access control for Laravel 5",
-  "keywords": [
-    "laravel",
-    "rbac",
-    "acl",
-    "permissions",
-    "roles",
-    "auth",
-    "security"
-  ],
-  "minimum-stability": "stable",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "PHPZen",
-      "email": "phpzen.code@gmail.com",
-      "homepage": "https://github.com/phpzen",
-      "role": "Developer"
-    }
-  ],
-  "require": {
-    "php": ">=5.5.9",
-    "illuminate/support": "5.2.*"
-  },
-  "autoload": {
-    "psr-4": {
-      "PHPZen\\LaravelRbac\\": "src/"
-    }
-  }
+	"name": "pavelmgn/laravel-rbac",
+	"description": "Role based access control for Laravel 5+",
+	"keywords": [
+		"laravel",
+		"rbac",
+		"acl",
+		"permissions",
+		"roles",
+		"auth",
+		"security"
+	],
+	"minimum-stability": "stable",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Pavelmgn",
+			"email": "pavelmgn@gmail.com",
+			"homepage": "https://github.com/pavelmgn",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=7.1.0",
+		"illuminate/support": ">=5.6"
+	},
+	"autoload": {
+		"psr-4": {
+			"Pavelmgn\\LaravelRbac\\": "src/"
+		}
+	}
 }

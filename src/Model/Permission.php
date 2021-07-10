@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPZen\LaravelRbac\Model;
+namespace Pavelmgn\LaravelRbac\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,6 +10,6 @@ class Permission extends Model
 
     public function roles()
     {
-        return $this->belongsToMany('PHPZen\LaravelRbac\Model\Role');
+        return $this->belongsToMany('Pavelmgn\LaravelRbac\Model\Role');
     }
 }

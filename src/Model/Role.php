@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPZen\LaravelRbac\Model;
+namespace Pavelmgn\LaravelRbac\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -15,6 +15,6 @@ class Role extends Model
 
     public function permissions()
     {
-        return $this->belongsToMany('PHPZen\LaravelRbac\Model\Permission')->withTimestamps();
+        return $this->belongsToMany('Pavelmgn\LaravelRbac\Model\Permission')->withTimestamps();
     }
 }

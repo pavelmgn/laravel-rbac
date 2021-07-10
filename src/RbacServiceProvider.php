@@ -1,5 +1,5 @@
 <?php
-namespace PHPZen\LaravelRbac;
+namespace Pavelmgn\LaravelRbac;
 
 use Illuminate\Support\ServiceProvider;
 use Blade;
