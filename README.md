@@ -13,7 +13,7 @@ or modify your `composer.json`
 ```
 "require": {
     ...
-    "pavelmgn/laravel-rbac": "^0.2"
+    "pavelmgn/laravel-rbac": "^0.3"
 }
 ```
 
